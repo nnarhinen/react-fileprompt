@@ -1,0 +1,29 @@
+{
+  "name": "react-fileprompt",
+  "version": "0.0.1",
+  "description": "React component for prompting user for a file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nnarhinen/react-fileprompt.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "file",
+    "prompt"
+  ],
+  "author": "Niklas Närhinen <niklas@narhinen.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nnarhinen/react-fileprompt/issues"
+  },
+  "homepage": "https://github.com/nnarhinen/react-fileprompt",
+  "dependencies": {
+    "react": "^0.11.2",
+    "react-bootstrap": "^0.12.0"
+  }
+}

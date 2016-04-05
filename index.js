@@ -1,7 +1,6 @@
-var cloneWithProps = require('react-bootstrap/utils/cloneWithProps'), // @see https://github.com/facebook/react/issues/1906
-    React = require('react');
+var React = require('react');
 
-var Fileprompt = module.exports = React.createClass({
+var Fileprompt = React.createClass({
   clickHandler: function(ev) {
     ev.preventDefault();
     var self = this,
@@ -15,7 +14,9 @@ var Fileprompt = module.exports = React.createClass({
       self.props.onFilesSelected &&
         self.props.onFilesSelected(input.files);
       input.removeEventListener('change', changeHandler);
+      document.body.removeChild(input);
     };
+    document.body.appendChild(input);
 
     input.addEventListener('change', changeHandler);
     input.click();
@@ -23,6 +24,8 @@ var Fileprompt = module.exports = React.createClass({
   render: function() {
     var props = {};
     props.onClick = this.clickHandler;
-    return cloneWithProps(React.Children.only(this.props.children), props);
+    return React.cloneElement(React.Children.only(this.props.children), props);
   }
 });
+
+module.exports = Fileprompt;

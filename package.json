@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/nnarhinen/react-fileprompt/issues"
   },
-  "homepage": "https://github.com/nnarhinen/react-fileprompt"
+  "homepage": "https://github.com/nnarhinen/react-fileprompt",
+  "peerDependencies": {
+    "react": "^0.14.8"
+  }
 }

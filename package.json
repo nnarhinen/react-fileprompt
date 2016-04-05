@@ -1,6 +1,6 @@
 {
   "name": "react-fileprompt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component for prompting user for a file",
   "main": "index.js",
   "scripts": {

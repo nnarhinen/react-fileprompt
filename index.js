@@ -16,6 +16,7 @@ var Fileprompt = React.createClass({
       input.removeEventListener('change', changeHandler);
       document.body.removeChild(input);
     };
+    input.style.display = 'none';
     document.body.appendChild(input);
 
     input.addEventListener('change', changeHandler);
